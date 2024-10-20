@@ -13,8 +13,11 @@ const Join = () => {
                 ¿Estás preparado para valorar?
             </h2>
             <p>
-                únete a esta comunidad de viajeros y valora tu experiencia por todo el mundo.
-                Ayuda a los demás a conocer el mejor lugar para hospedarse.
+                Únete a nuestra vibrante comunidad de viajeros apasionados y comparte tus experiencias de viaje por todo el mundo. 
+                Comparte tus valoraciones sobre los hoteles en los que te has hospedado, y ayuda a otros a descubrir los mejores 
+                lugares para quedarse. Tu opinión puede marcar la diferencia para futuros aventureros, ayudándolos a encontrar 
+                opciones de alojamiento que se adapten a sus necesidades y expectativas. Juntos, creamos una red de recomendaciones
+                confiables para hacer que cada viaje sea una experiencia inolvidable.
             </p>
             <button onClick={RegisterClick}>
                 Registrate

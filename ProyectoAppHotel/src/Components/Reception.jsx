@@ -7,8 +7,9 @@ const Reception = () => {
 
         <section className="adventureSection">
             <h2 className="adventureTitle">¿Preparado para la aventura?</h2>
-            <p className="adventureText"> Con nosotros conseguirás los mejores hoteles para seguir descubriendo el 
-                mundo en cada nueva aventura. ¿Estás preparado para nuevas experiencias?
+            <p className="adventureText"> Explora el mundo con nosotros y encuentra los mejores hoteles para cada nueva aventura. 
+                                          Descubre destinos únicos, sumérgete en experiencias inolvidables y 
+                                          prepárate para vivir cada viaje como nunca antes. ¿Estás listo para tu próxima gran aventura?
             </p>
         </section>
     );

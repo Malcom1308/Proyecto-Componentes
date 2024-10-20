@@ -1,23 +1,26 @@
 :root {
-    --primary-bg: #F5F5F5;      /* Color de fondo del header */
-    --detail-green: #314E04;    /* Color de detalle para hover */
-    --text-green: #72B85B;      /* Color de texto principal */
+    --primary-bg: #F5F5F5;      
+    --detail-green: #314E04;   
+    --text-green: #72B85B;      
 }
 
 .adventureSection {
-    padding: 7rem; /* Añade algo de espacio alrededor */
-    text-align: center; /* Centra el texto */
+    padding: 7rem; 
+    text-align: center; 
     background-color: var(--primary-bg);
 }
 
 .adventureTitle {
-    font-size: 2rem; /* Ajusta el tamaño del título */
-    color: var(--text-green); /* Color del título */
-    margin-bottom: 1rem; /* Espaciado entre el título y el párrafo */
+    font-size: 2rem;
+    color: var(--text-green); 
+    margin-bottom: 1rem; 
 }
 
 .adventureText {
-    font-size: 1.30rem; /* Ajusta el tamaño del texto */
-    color: var(--text-green); /* Color del texto */
-    line-height: 1.6; /* Mejora la legibilidad */
+    font-size: 1.4rem;  
+    line-height: 1.5;  
+    text-align: center;  
+    margin: 0 auto;  
+    max-width: 800px; 
+    padding: 5px 5px; 
 }

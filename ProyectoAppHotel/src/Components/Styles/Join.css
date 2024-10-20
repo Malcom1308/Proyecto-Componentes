@@ -1,42 +1,41 @@
 :root {
-    --primary-bg: #F5F5F5;      /* Color de fondo del header */
-    --detail-green: #314E04;    /* Color de detalle para hover */
-    --text-green: #72B85B;      /* Color de texto principal */
+    --primary-bg: #F5F5F5;      
+    --detail-green: #314E04;    
+    --text-green: #72B85B;      
 }
 
 .JoinContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--primary-bg); /* Fondo usando la variable definida */
-    padding: 40px;
-    /* margin-top: 20px; */
+    padding: 7rem; 
+    text-align: center; 
+    background-color: var(--primary-bg); 
 }
 
 .JoinContainer h2 {
-    color: var(--text-green); /* Color del texto principal */
-    font-size: 2.5rem; /* Tamaño del título */
-    margin-bottom: 20px;
+    font-size: 2rem; 
+    color: var(--text-green); 
+    margin-bottom: 1rem; 
 }
 
 .JoinContainer p {
-    color: var(--detail-green); /* Color del texto */
-    font-size: 1.2rem; /* Tamaño del texto */
-    margin-bottom: 30px;
+    font-size: 1.4rem; 
+    line-height: 1.5;   
+    text-align: center;  
+    margin: 0 auto;  
+    max-width: 800px; 
+    padding: 5px 5px;  
+    color: var(--detail-green); 
 }
 
 .JoinContainer button {
-    background-color: var(--detail-green); /* Fondo del botón */
-    color: var(--primary-bg); /* Color del texto del botón */
+    background-color: var(--detail-green); 
+    color: var(--primary-bg);
     border: none;
     padding: 12px 30px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
 }
 
 .JoinContainer button:hover {
-    background-color: var(--text-green); /* Cambio de color en hover */
+    background-color: var(--text-green);
 }
