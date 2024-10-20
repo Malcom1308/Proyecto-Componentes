@@ -1,0 +1,46 @@
+:root {
+    --primary-bg: #F5F5F5;      /* Color de fondo del header */
+    --detail-green: #314E04;    /* Color de detalle para hover */
+    --text-green: #72B85B;      /* Color de texto principal */
+}
+
+.CarouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Asegura que esté centrado verticalmente */
+    text-align: center;
+    background-color: var(--primary-bg); /* Fondo usando la variable definida */
+    padding: 20px;
+}
+
+.CarouselContent h3 {
+    color: var(--text-green); /* Color del texto principal */
+    font-size: 2rem; /* Tamaño de la fuente */
+    margin-bottom: 10px;
+}
+
+.CarouselContent p {
+    color: var(--detail-green); /* Color de detalle para el texto */
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    margin-bottom: 20px;
+}
+
+.CarouselControls button {
+    background-color: var(--detail-green); /* Fondo del botón */
+    color: var(--primary-bg); /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.CarouselControls button:hover {
+    background-color: var(--text-green); /* Efecto hover con otro color */
+}
+
+
+  

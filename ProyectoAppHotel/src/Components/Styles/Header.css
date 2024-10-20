@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg: #F5F5F5;      /* Color de fondo del header */
+    --detail-green: #314E04;    /* Color de detalle para hover */
+    --text-green: #72B85B;      /* Color de texto principal */
+}
+
+.header {
+    position: absolute;  /* Cambia a posición absoluta */
+    top: 0;              /* Asegura que el header esté en la parte superior */
+    left: 0;             /* Asegura que el header esté alineado a la izquierda */
+    right: 0;            /* Asegura que el header ocupe todo el ancho */
+    padding: 1rem;
+    background-color: var(--detail-green); /* Color de fondo del header */
+    color: var(--text-green);
+    height: 80px;        /* Ajusta la altura del header según sea necesario */
+    display: flex;       /* Asegura que los elementos se alineen en una fila */
+    justify-content: space-between; /* Espacio entre logo y menú de navegación */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.header img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px; /* Ajusta el tamaño de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
+    background-color: transparent; /* Asegura que no haya color de fondo en la imagen */
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Espaciado entre los elementos del menú */
+    list-style: none; /* Elimina las viñetas del menú */
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    color: var(--text-green); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 1.25rem; /* Tamaño de la letra */
+    transition: color 0.3s; /* Transición suave para el hover */
+    cursor: default; /* Cambia el cursor para que no parezca un enlace */
+    margin-right: 1.5rem; /* Añade margen a la derecha */
+}
+
+.nav a:hover {
+    color: var(--detail-green); /* Cambia el color en hover */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.user-icon {
+    width: 20px; /* Ajusta el tamaño del icono de usuario */
+    height: 20px; /* Ajusta el tamaño del icono de usuario */
+}

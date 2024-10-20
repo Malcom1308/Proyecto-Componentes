@@ -1,0 +1,48 @@
+:root {
+    --primary-bg: #F5F5F5;      /* Color de fondo del header */
+    --detail-green: #314E04;    /* Color de detalle para hover */
+    --text-green: #72B85B;      /* Color de texto principal */
+}
+
+.footer {
+    background-color: var(--detail-green); /* Color de fondo del footer */
+    color: var(--primary-bg); /* Color del texto */
+    padding: 20px 0;
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.FooterContent {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+    display: flex; /* Flexbox para alinear el contenido */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    color: var(--text-green);
+}
+
+.FooterLinks {
+    display: flex; /* Flexbox para alinear los enlaces */
+    align-items: center; /* Centra verticalmente los enlaces */
+}
+
+.FooterLinks span {
+    margin: 0 10px; /* Espacio entre los enlaces y el separador */
+}
+
+.FooterLinks a {
+    color: var(--text-green); /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0; /* Sin margen */
+}
+
+.FooterLinks a:hover {
+    text-decoration: none; /* Sin subrayado en hover */
+}
+
+.FooterContent p {
+    margin: 0; /* Sin margen en el párrafo */
+    text-align: right; /* Alinea el texto a la derecha */
+}
