@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import "../Components/Styles/Join.css";
 
 
+
 const Join = () => {
+    const navigate = useNavigate();
+
     const RegisterClick = () => {
-        window.location.href = '/Register';
+        navigate('/register');
     };
 
     return (

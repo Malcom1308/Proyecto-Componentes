@@ -1,24 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Header from './Components/Header.jsx'
-import Reception from './Components/Reception.jsx'
-import HotelSample from './Components/HotelSample.jsx'
-import Join from './Components/Join.jsx'
-import Footer from './Components/Footer.jsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import LandPage from './Pages/LandPage.jsx';
+import Register from './Pages/Register.jsx';
+import Footer from './Components/Footer.jsx';
+import "./Components/Styles/App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
-      <Header/>
-      <Reception/>
-      <HotelSample/>
-      <Join/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandPage />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
-};
+}
 
-export default App
+export default App;

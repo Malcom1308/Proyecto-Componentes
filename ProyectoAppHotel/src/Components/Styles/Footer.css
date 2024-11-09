@@ -9,18 +9,20 @@
     color: var(--primary-bg); 
     padding: 20px 0;
     display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative; /* Cambia a relative si era absolute */
 }
 
 .FooterContent {
     max-width: 1200px; 
-    margin: 0 auto; 
     width: 100%; 
     display: flex; 
     justify-content: space-between;
     align-items: center;
     color: var(--text-green);
+    padding: 0 20px;
 }
 
 .FooterLinks {
@@ -35,11 +37,10 @@
 .FooterLinks a {
     color: var(--text-green);
     text-decoration: none; 
-    margin: 0; 
 }
 
 .FooterLinks a:hover {
-    text-decoration: none; 
+    text-decoration: underline; 
 }
 
 .FooterContent p {

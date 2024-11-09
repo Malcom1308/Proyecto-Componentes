@@ -1,0 +1,17 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.App {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    min-height: 100vh; /* Asegura que ocupe al menos la altura de la ventana */
+}
+
+.Content {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio restante */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}

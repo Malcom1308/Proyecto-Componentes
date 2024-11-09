@@ -1,0 +1,74 @@
+:root {
+    --primary-bg: #F5F5F5;      
+    --detail-green: #314E04;    
+    --text-green: #72B85B;      
+}
+
+.RegisterContainer {
+    max-width: 500px;
+    width: 90%; 
+    padding: 100px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-bg);
+    margin: auto;
+}
+
+.RegisterTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--detail-green); 
+}
+
+.RegisterText {
+    font-size: 14px;
+    color: var(--detail-green);
+    margin-bottom: 20px;
+}
+
+.RegisterForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.RegisterInputGroup {
+    margin-bottom: 20px;
+}
+
+.RegisterLabel {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-green); 
+}
+
+.RegisterInput {
+    padding: 10px;
+    border: 1px solid var(--detail-green);
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.RegisterInput:focus {
+    border-color: var(--text-green); 
+    outline: none;
+}
+
+.RegisterButton {
+    background-color: var(--detail-green);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.RegisterButton:hover {
+    background-color: var(--text-green); 
+}

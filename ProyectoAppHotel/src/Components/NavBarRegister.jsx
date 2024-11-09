@@ -1,24 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "./Logo.jsx";
-import UserIcon from "./UserIcon";
-import "../Components/Styles/Header.css"; 
+import "../Components/Styles/NavBar.css";
 
-const Header = () => {
+const NavBarRegister = () => {
+
+    const navigate = useNavigate();
+
+    const homePage = () => {
+        navigate('/');
+    };
+
     return (
         <header className="header">
-            <div className="logo-container">
+            <div className="logo-container" onClick={homePage}>
                 <Logo className="logo"/>
             </div>
             <nav className="nav">
                     <a href="">Inicio</a>
                     <a href="">Recomendación</a>
-                    <a href="">Visitas</a>
             </nav>
-            <div className="user-icon-container">
-                <UserIcon/>
-            </div>
         </header>
-    );
-};
+    ); 
 
-export default Header;
+
+};
+export default NavBarRegister;

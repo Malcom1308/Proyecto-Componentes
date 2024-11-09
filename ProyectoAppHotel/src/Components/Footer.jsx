@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="FooterContent">
                 <p>
-                    2024 HotelPulse. Todos los derechos Reservados 
+                    &copy; 2024 HotelPulse. Todos los derechos Reservados 
                 </p>
                 <div className="FooterLinks">
                     <a href="">Términos de Uso</a>
