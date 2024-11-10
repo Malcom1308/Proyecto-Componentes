@@ -1,0 +1,120 @@
+/* Añadir margen superior al contenedor principal para evitar que el navbar lo cubra */
+.container {
+  padding: 20px;
+  margin-top: 80px; /* Ajusta el valor según la altura de tu navbar */
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.filterContainer {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  margin-top: 20px; /* Ajuste para que no se pegue al top */
+}
+
+.searchInput,
+.sortSelect {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.sortSelect {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.loadingText {
+  color: red;
+}
+
+.hotelCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.hotelCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.hotelHeader {
+  margin-bottom: 16px;
+}
+
+.hotelName {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.hotelAddress {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.hotelImage {
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 16px;
+}
+
+.phoneContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.detailsButton {
+  margin-top: 16px;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.detailsButton:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries para la responsividad */
+@media (max-width: 768px) {
+  .filterContainer {
+    flex-direction: column; /* Los filtros se apilan verticalmente en dispositivos pequeños */
+    align-items: stretch;
+  }
+
+  .searchInput,
+  .sortSelect {
+    width: 100%; /* Asegurarse que ocupen todo el ancho disponible */
+  }
+
+  .hotelCardContainer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Acomoda más tarjetas de hotel */
+  }
+}

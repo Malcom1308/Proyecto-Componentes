@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "./Logo.jsx";
 import UserIcon from "./UserIcon.jsx";
 import "../Components/Styles/NavBar.css";
@@ -10,9 +11,9 @@ const Navbar = () => {
                 <Logo className="logo"/>
             </div>
             <nav className="nav">
-                    <a href="">Inicio</a>
-                    <a href="">Recomendación</a>
-                    <a href="">Visitas</a>
+                    <Link to="/">Inicio</Link>
+                    <Link to="/recommendation">Recomendación</Link>
+                    <Link to="/">Visitas</Link>
             </nav>
             <div className="user-icon-container">
                 <UserIcon/>
