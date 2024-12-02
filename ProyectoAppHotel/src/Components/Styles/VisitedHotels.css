@@ -1,0 +1,89 @@
+:root {
+    --primary-bg: #F5F5F5;      
+    --detail-green: #314E04;   
+    --text-green: #72B85B;      
+}
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-bg);
+  }
+  
+  .visited-hotels {
+    padding: 20px;
+    color: var(--detail-green);
+  }
+  
+  .visited-hotels h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--detail-green);
+  }
+  
+  .hotels-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .hotel-card {
+    border: 1px solid var(--border-gray);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    background-color: #fff;
+  }
+  
+  .hotel-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .address,
+  .phone,
+  .date-visited {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin: 5px 0;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--accent-yellow);
+  }
+  
+  .review {
+    font-size: 0.9rem;
+    color: var(--text-green);
+    margin: 10px 0;
+  }
+  
+  .hotel-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .add-button {
+    background-color: var(--detail-green);
+    color: #fff;
+  }
+  
+  .edit-button {
+    background-color: var(--text-green);
+    color: #fff;
+  }
+  

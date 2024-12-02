@@ -1,0 +1,115 @@
+:root {
+    --primary-bg: #F5F5F5;      
+    --detail-green: #314E04;   
+    --text-green: #72B85B;      
+}
+
+.profileCard{
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 16px;
+    background-color: var(--primary-bg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.profile-header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.profile-image{
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.profile-info{
+    flex: 1;
+    margin-left: 16px;
+}
+
+.profile-name{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.profile-username{
+    color:#888;
+    margin:4px 0;
+}
+
+.profile-details span{
+    display: block;
+    font-size: 18px;
+    color: #555;
+}
+
+.profile-bio{
+    margin-top: 8px;
+    font-size: 20px;
+    color: #333;
+}
+
+.edit-profile-btn{
+    background-color: var(--detail-green);
+    color: white;
+    border:none;
+    padding: 20px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.edit-profile-btn:hover{
+    opacity: 0.8;
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.profile-stats div{
+    text-align: center;
+}
+
+.profile-stats h3{
+    margin: 0;
+    font-size: 20px;
+}
+
+.profile-tabs{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--detail-green);
+}
+
+.profile-tabs button{
+    flex: 1;
+    padding: 10px;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.profile-tabs .active{
+    font-weight: bold;
+    border-bottom: 2px solid var(--text-green);
+}
+
+.recent-post{
+    margin:0 0 8px;
+    font-size: 1.1em;
+}
+
+.recent-post p{
+    color: #555;
+}
